@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<lable for="name">Name:</lable>
-	<input type="text" id="name" placeholder="Name" required>
-	<br><br>
-	<lable for="email">Email:</lable>
-	<input type="email" id="email" placeholder="Email" required>
-	<br><br>
-	<lable>Gender:</lable>
-	<input type="radio" id="gender_m" name="gender" required>
-	<lable for="gender_m">Male</lable>
-	<input type="radio" id="gender_f" name="gender" required>
-	<lable for="gender_m">Female</lable>
-	<br><br>
-	<label for="cars">Car Brands:</label>
+
+    <form method="post">
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+        <!-- Gender -->
+        <label for="gender_m">Gender:</label>
+        <input type="radio" id="gender_m" name="gender" required> Male
+        <input type="radio" id="gender_f" name="gender" required> Female<br><br>
+
+        <!-- Car Brands -->
+        <label for="cars">Car Brands:</label>
         <select id="cars" name="cars" required>
             <option value="">--Please choose an option--</option>
             <option value="BMW">BMW</option>
@@ -28,28 +30,30 @@
             <option value="Toyota">Toyota</option>
             <option value="Ford">Ford</option>
         </select><br><br>
-	
-	<label for="age">Age</label>
-	<input type="number" id="age" placeholder="Age" required>
-	<br><br>
-	<label for="dob">DOB</label>
-	<input type="date" id="dob" required>
-	<br><br>
-	<lable for="tel">Phone Number</lable>
-	<input type="tel" id="tel" placeholder="xxx-xxx-xxxx">
-	<br><br>
-	<lable for="password">Password</lable>
-	<input type="password" id="password" placeholder="Password" required>
-	<br><br>
-	<lable for="tos">I agree to the TOS</lable>
-	<input type="checkbox" id="tos" required>
-	<br><br>
-	<button type="submit">Submit</button>
-	
-	
-    <script type="text/javascript" src="./script.js">
-</script>
+
+        <!-- Age -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Age" required><br><br>
+
+        <!-- DOB -->
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Phone Number -->
+        <label for="tel">Phone Number:</label>
+        <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx"><br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+
+        <!-- TOS Checkbox -->
+        <label for="tos">I agree to the TOS</label>
+        <input type="checkbox" id="tos" name="tos" required><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
 
 </body>
-
 </html>

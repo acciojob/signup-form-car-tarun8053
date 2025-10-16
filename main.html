@@ -20,13 +20,14 @@
 	<input type="radio" id="gender_f" name="gender" required>
 	<lable for="gender_m">Female</lable>
 	<br><br>
-	<lable for="cars">Car Brands:</lable>
-	<select id="cars">
-		<option>Audi</option>
-		<option>Maruti</option>
-		<option>BMW</option>
-		<option>Toyata</option>
-	</select>
+	<label for="cars">Car Brands:</label>
+        <select id="cars" name="cars" required>
+            <option value="">--Please choose an option--</option>
+            <option value="BMW">BMW</option>
+            <option value="Tesla">Tesla</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Ford">Ford</option>
+        </select><br><br>
 	<br><br>
 	<label for="age">Age</label>
 	<input type="number" id="age" placeholder="Age" required>
